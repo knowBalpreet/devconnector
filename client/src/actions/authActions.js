@@ -57,5 +57,5 @@ export const setCurrentUser = (decoded) => {
   // Remove auth header for future requests
   setAuthToken(false);
   // Set current user to {} which will set isAuthenticated to false
-  setCurrentUser({})
+  dispatch(setCurrentUser({}))
  }
